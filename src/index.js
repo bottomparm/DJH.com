@@ -30,7 +30,7 @@ import NucleoIcons from "views/NucleoIcons.js";
 import LoginPage from "views/examples/LoginPage.js";
 import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
-let resume = require('./resume/myresume.html')
+// import Resume from "views/index-sections/Resume"
 
 ReactDOM.render(
   <BrowserRouter>
@@ -49,10 +49,10 @@ ReactDOM.render(
           path="/profile-page"
           render={props => <ProfilePage {...props} />}
         />
-        <Route
+        {/* <Route
           path="/resume"
-          render={resume}
-        />
+          render={props => <Resume {...props} />}
+        /> */}
         <Route path="/login-page" render={props => <LoginPage {...props} />} />
         <Redirect to="/index" />
         <Redirect from="/" to="/index" />
