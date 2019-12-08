@@ -2,6 +2,7 @@
   "name": "djh.com",
   "version": "1.0.0",
   "private": true,
+  "homepage": "http://bottomparm.github.io/djh",
   "dependencies": {
     "jsonresume-theme-elegant": "^1.13.2",
     "moment": "2.24.0",
