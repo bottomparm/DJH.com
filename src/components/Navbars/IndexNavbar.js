@@ -62,6 +62,26 @@ function IndexNavbar() {
             <UncontrolledTooltip target="#navbar-brand">
               Dylan's Resume
             </UncontrolledTooltip>
+            <NavbarBrand
+              href="/templates"
+              target="_blank"
+              id="navbar-templates"
+            >
+              Tribal Data
+            </NavbarBrand>
+            <UncontrolledTooltip target="#navbar-templates">
+              Don't click...please
+            </UncontrolledTooltip>
+            <NavbarBrand
+              href="/profile-page"
+              target="_blank"
+              id="navbar-profile-page"
+            >
+              Profile
+            </NavbarBrand>
+            <UncontrolledTooltip target="#navbar-profile-page">
+              Who is Dylan anyway?
+            </UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
               onClick={() => {

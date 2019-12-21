@@ -20,22 +20,29 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 // styles for this kit
-import "assets/css/bootstrap.min.css";
-import "assets/scss/now-ui-kit.scss";
-import "assets/demo/demo.css";
-import "assets/demo/nucleo-icons-page-styles.css";
+import "assets/css/bootstrap.min.css"
+import "assets/scss/now-ui-kit.scss"
+import "assets/demo/demo.css"
+import "assets/demo/nucleo-icons-page-styles.css"
 // pages for this kit
-import Index from "views/Index.js";
-import NucleoIcons from "views/NucleoIcons.js";
-import LoginPage from "views/examples/LoginPage.js";
-import LandingPage from "views/examples/LandingPage.js";
-import ProfilePage from "views/examples/ProfilePage.js";
+import Index from "views/Index.js"
+import NucleoIcons from "views/NucleoIcons.js"
+import LoginPage from "views/examples/LoginPage.js"
+import LandingPage from "views/examples/LandingPage.js"
+import ProfilePage from "views/examples/ProfilePage.js"
+import SectionTemplates from "views/index-sections/SectionTemplates"
 
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
       <Switch>
-        <Route path="/index" render={props => <Index {...props} />} />
+        <Route
+          path="/index"
+          render={props => <Index {...props} />} />
+        <Route
+          path="/templates"
+          render={props => <SectionTemplates {...props} />}
+        />
         <Route
           path="/nucleo-icons"
           render={props => <NucleoIcons {...props} />}
@@ -55,4 +62,4 @@ ReactDOM.render(
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")
-);
+)

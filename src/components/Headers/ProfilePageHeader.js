@@ -38,7 +38,7 @@ function ProfilePageHeader() {
           <div className="photo-container">
             <img alt="..." src={require("assets/img/ryan.jpg")}></img>
           </div>
-          <h3 className="title">Ryan Scheinder</h3>
+          {/* <h3 className="title">Ryan Scheinder</h3>
           <p className="category">Photographer</p>
           <div className="content">
             <div className="social-description">
@@ -53,7 +53,14 @@ function ProfilePageHeader() {
               <h2>48</h2>
               <p>Bookmarks</p>
             </div>
+          </div> */}
+          <div className="category">
+            <h1 className="h1-seo">Dylan Jack Hrebenach</h1>
+            <h3>A window into my life.</h3>
           </div>
+          <h6 className="designed-by">
+            Designed by Dylan Hrebenach
+          </h6>
         </Container>
       </div>
     </>
