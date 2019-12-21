@@ -31,6 +31,7 @@ import LoginPage from "views/examples/LoginPage.js"
 import LandingPage from "views/examples/LandingPage.js"
 import ProfilePage from "views/examples/ProfilePage.js"
 import SectionTemplates from "views/index-sections/SectionTemplates"
+import Resume from "views/index-sections/Resume"
 
 ReactDOM.render(
   <BrowserRouter>
@@ -42,6 +43,10 @@ ReactDOM.render(
         <Route
           path="/templates"
           render={props => <SectionTemplates {...props} />}
+        />
+         <Route
+          path="/resume"
+          render={props => <Resume {...props} />}
         />
         <Route
           path="/nucleo-icons"
