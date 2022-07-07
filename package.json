@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "jsonresume-theme-elegant": "^1.13.2",
-    "moment": "2.24.0",
+    "moment": "2.29.4",
     "node": "^12.14.0",
     "node-sass": "^4.13.0",
     "nouislider": "14.0.2",
